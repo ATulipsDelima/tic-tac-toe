@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+
+/* header */
+#app{
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display:flex;
+    align-items: center;
+    background: #222;
+}
+
+.header > *{
+    color: #eeeeee;
+}
+
+.header__turn{
+    padding: 12px;
+}
+.header__status{
+    padding: 12px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* restart button */
+.header__restart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+/* end retart button */
+/* end header */
+
+/* game board */
+.board{
+    display: grid;
+    background: #cccccc;
+    gap: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* tles */
+.board__tile{
+    background: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-family: cursive;
+    color: #222222;
+}
+.board__tile:hover{
+    background: #eeeeee;
+
+}
+
+.board__tile--winner{
+    color: green;
+}
+/* end tiles */
+/* end game board */
